@@ -1,0 +1,589 @@
+Downloading https://services.gradle.org/distributions/gradle-9.6.0-bin.zip
+.............10%.............20%..............30%.............40%..............50%.............60%.............70%..............80%.............90%..............100%
+
+Welcome to Gradle 9.6.0!
+
+Here are the highlights of this release:
+ - Improved Configuration Cache hit rates
+ - Additional CLI rendering options
+ - Important project hierarchy lookup deprecations
+
+For more details see https://docs.gradle.org/9.6.0/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:assembleGithubDebug
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:pluginDescriptors
+> Task :build-logic:processResources
+> Task :build-logic:compileKotlin
+> Task :build-logic:compileJava NO-SOURCE
+> Task :build-logic:classes
+> Task :build-logic:jar
+
+> Configure project :app
+w: file:///home/runner/work/rikkahub/rikkahub/app/build.gradle.kts:114:41: 'fun srcDirs(vararg srcDirs: Any): Any' is deprecated. Use `directories` mutable set instead.
+
+> Configure project :material3
+w: file:///home/runner/work/rikkahub/rikkahub/material3/build.gradle.kts:9:20: 'fun srcDir(srcDir: Any): Any' is deprecated. Use `directories` mutable set instead.
+
+> Configure project :terminal
+Checking the license for package NDK (Side by side) 28.2.13676358 in /usr/local/lib/android/sdk/licenses
+License for package NDK (Side by side) 28.2.13676358 accepted.
+Preparing "Install NDK (Side by side) 28.2.13676358 v.28.2.13676358".
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" ready.
+Installing NDK (Side by side) 28.2.13676358 in /usr/local/lib/android/sdk/ndk/28.2.13676358
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" complete.
+"Install NDK (Side by side) 28.2.13676358 v.28.2.13676358" finished.
+
+> Task :common:preBuild UP-TO-DATE
+> Task :common:preDebugBuild UP-TO-DATE
+> Task :ai:preBuild UP-TO-DATE
+> Task :ai:preDebugBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preGithubDebugBuild UP-TO-DATE
+> Task :app:mergeGithubDebugNativeDebugMetadata NO-SOURCE
+> Task :app:injectCrashlyticsMappingFileIdGithubDebug
+> Task :ai:processDebugNavigationResources
+> Task :common:generateDebugResources
+> Task :common:processDebugNavigationResources
+> Task :ai:generateDebugResources
+> Task :common:javaPreCompileDebug
+> Task :ai:javaPreCompileDebug
+> Task :ai:extractDebugSupportedLocales
+> Task :app:injectCrashlyticsVersionControlInfoGithubDebug
+> Task :app:generateGithubDebugBuildConfig
+> Task :common:extractDebugSupportedLocales
+> Task :document:preBuild UP-TO-DATE
+> Task :document:preDebugBuild UP-TO-DATE
+> Task :common:packageDebugResources
+> Task :ai:packageDebugResources
+> Task :document:extractDebugSupportedLocales
+> Task :highlight:preBuild UP-TO-DATE
+> Task :highlight:preDebugBuild UP-TO-DATE
+> Task :app:processGithubDebugGoogleServices
+> Task :highlight:extractDebugSupportedLocales
+> Task :app:mapGithubDebugSourceSetPaths
+> Task :material3:preBuild UP-TO-DATE
+> Task :material3:preDebugBuild UP-TO-DATE
+> Task :material3:extractDebugSupportedLocales
+> Task :mediagen:preBuild UP-TO-DATE
+> Task :mediagen:preDebugBuild UP-TO-DATE
+> Task :mediagen:extractDebugSupportedLocales
+> Task :oauth:preBuild UP-TO-DATE
+> Task :oauth:preDebugBuild UP-TO-DATE
+> Task :oauth:extractDebugSupportedLocales
+> Task :search:preBuild UP-TO-DATE
+> Task :search:preDebugBuild UP-TO-DATE
+> Task :search:extractDebugSupportedLocales
+> Task :speech:preBuild UP-TO-DATE
+> Task :speech:preDebugBuild UP-TO-DATE
+> Task :speech:extractDebugSupportedLocales
+> Task :terminal:preBuild UP-TO-DATE
+> Task :terminal:preDebugBuild UP-TO-DATE
+> Task :app:extractGithubDebugSupportedLocales
+> Task :ui:preBuild UP-TO-DATE
+> Task :ui:preDebugBuild UP-TO-DATE
+> Task :terminal:extractDebugSupportedLocales
+> Task :ui:extractDebugSupportedLocales
+> Task :workspace:preBuild UP-TO-DATE
+> Task :workspace:preDebugBuild UP-TO-DATE
+
+> Task :web:buildWebUi
+$ react-router build && tsx copy.ts
+[36mvite v7.3.3 [32mbuilding client environment for production...[36m[39m
+transforming...
+[33mapp/components/ui/sonner.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/ui/drawer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/ui/sidebar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/extended/conversation.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/ui/tooltip.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/ui/sheet.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[33mapp/components/ui/checkbox.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+
+> Task :workspace:extractDebugSupportedLocales
+> Task :app:generateGithubDebugResources
+> Task :document:processDebugNavigationResources
+> Task :highlight:processDebugNavigationResources
+> Task :material3:processDebugNavigationResources
+> Task :mediagen:processDebugNavigationResources
+> Task :oauth:processDebugNavigationResources
+> Task :search:processDebugNavigationResources
+> Task :speech:processDebugNavigationResources
+> Task :terminal:processDebugNavigationResources
+> Task :ui:processDebugNavigationResources
+> Task :workspace:processDebugNavigationResources
+> Task :document:generateDebugResources
+> Task :document:packageDebugResources
+> Task :ai:parseDebugLocalResources
+> Task :common:parseDebugLocalResources
+> Task :document:parseDebugLocalResources
+> Task :ai:generateDebugRFile
+> Task :common:generateDebugRFile
+> Task :document:javaPreCompileDebug
+> Task :highlight:generateDebugResources
+> Task :document:generateDebugRFile
+> Task :highlight:packageDebugResources
+> Task :highlight:parseDebugLocalResources
+> Task :highlight:generateDebugRFile
+
+> Task :web:buildWebUi
+[33mapp/components/ui/select.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[32m✓[39m 2468 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Size4-Regular-Dl5lxZxV.woff2        [39m[1m[2m    4.93 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Size2-Regular-Dy4dx90m.woff2        [39m[1m[2m    5.21 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Size1-Regular-mCD8mA8B.woff2        [39m[1m[2m    5.47 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Caligraphic-Regular-Di6jR-x-.woff2  [39m[1m[2m    6.91 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Caligraphic-Bold-Dq_IR9rO.woff2     [39m[1m[2m    6.91 kB[22m[1m[22m
+[2mbuild/client/[22m[32m.vite/manifest.json                              [39m[1m[2m    8.95 kB[22m[1m[22m[2m │ gzip:   1.16 kB[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Script-Regular-D3wIWfF6.woff2       [39m[1m[2m    9.64 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_SansSerif-Regular-DDBCnlJ7.woff2    [39m[1m[2m   10.34 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Fraktur-Regular-CTYiF6lA.woff2      [39m[1m[2m   11.32 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Fraktur-Bold-CL6g_b3V.woff2         [39m[1m[2m   11.35 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_SansSerif-Italic-C3H0VqGB.woff2     [39m[1m[2m   12.03 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_SansSerif-Bold-D1sUS0GD.woff2       [39m[1m[2m   12.22 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Typewriter-Regular-CO6r4hn1.woff2   [39m[1m[2m   13.57 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Math-BoldItalic-CZnvNsCZ.woff2      [39m[1m[2m   16.40 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Math-Italic-t53AETM-.woff2          [39m[1m[2m   16.44 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Main-BoldItalic-DxDJ3AOS.woff2      [39m[1m[2m   16.78 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Main-Italic-NWA7e6Wa.woff2          [39m[1m[2m   16.99 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Main-Bold-Cx986IdX.woff2            [39m[1m[2m   25.32 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_Main-Regular-B22Nviop.woff2         [39m[1m[2m   26.27 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[32mKaTeX_AMS-Regular-BQhdFMY1.woff2          [39m[1m[2m   28.08 kB[22m[1m[22m
+[2mbuild/client/[22m[2massets/[22m[35mmermaid-GHXKKRXX-oxd61a_B.css             [39m[1m[2m   44.67 kB[22m[1m[22m[2m │ gzip:  10.51 kB[22m
+[2mbuild/client/[22m[2massets/[22m[35mroot-C6ST7jYf.css                         [39m[1m[2m  116.59 kB[22m[1m[22m[2m │ gzip:  18.38 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mhome-CsfAmfIg.js                          [39m[1m[2m    0.15 kB[22m[1m[22m[2m │ gzip:   0.14 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mc._id-CsfAmfIg.js                         [39m[1m[2m    0.15 kB[22m[1m[22m[2m │ gzip:   0.14 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mhighlighted-body-OFNGDK62-C62f2iEu.js     [39m[1m[2m    0.51 kB[22m[1m[22m[2m │ gzip:   0.35 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mroot-CpB0jk6Z.js                          [39m[1m[2m   18.97 kB[22m[1m[22m[2m │ gzip:   6.39 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mindex-DA3N0fFE.js                         [39m[1m[2m  127.36 kB[22m[1m[22m[2m │ gzip:  42.81 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36minput-vNa3prJB.js                         [39m[1m[2m  174.64 kB[22m[1m[22m[2m │ gzip:  55.95 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mentry.client-ykuVUMf8.js                  [39m[1m[2m  186.73 kB[22m[1m[22m[2m │ gzip:  59.03 kB[22m
+[2mbuild/client/[22m[2massets/[22m[36mmermaid-GHXKKRXX-gz2KvSIk.js              [39m[1m[33m1,354.37 kB[39m[22m[2m │ gzip: 414.31 kB[22m
+[32m✓ built in 11.93s[39m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[36mvite v7.3.3 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+[33mapp/components/ui/sonner.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.[39m
+[32m✓[39m 32 modules transformed.
+rendering chunks...
+[2mbuild/server/[22m[32m.vite/manifest.json               [39m[1m[2m  0.23 kB[22m[1m[22m
+[2mbuild/server/[22m[2massets/[22m[35mserver-build-C6ST7jYf.css  [39m[1m[2m116.59 kB[22m[1m[22m
+[2mbuild/server/[22m[36mindex.js                          [39m[1m[2m 60.26 kB[22m[1m[22m
+
+[32m✓[39m 1 asset cleaned from React Router server build.
+[2mbuild/server/assets/server-build-C6ST7jYf.css[22m
+
+SPA Mode: Generated [1mbuild/client/index.html[22m
+Removing the server build in [32m/home/runner/work/rikkahub/rikkahub/web-ui/build/server[39m due to ssr:false
+[32m✓ built in 970ms[39m
+📦 Starting build output copy...
+   Source: ./build/client
+   Target: ../web/src/main/resources/static
+🧹 Cleaned target directory
+✅ Build output copied successfully!
+
+> Task :web:preBuild
+> Task :web:preDebugBuild
+> Task :web:extractDebugSupportedLocales
+> Task :app:generateGithubDebugLocaleConfig
+> Task :app:packageGithubDebugResources
+> Task :web:processDebugNavigationResources
+> Task :app:processGithubDebugNavigationResources
+> Task :app:parseGithubDebugLocalResources
+> Task :app:generateGithubDebugRFile
+> Task :highlight:javaPreCompileDebug
+> Task :material3:generateDebugResources
+> Task :material3:packageDebugResources
+> Task :material3:parseDebugLocalResources
+> Task :material3:generateDebugRFile
+> Task :common:compileDebugKotlin
+> Task :document:compileDebugKotlin
+> Task :highlight:compileDebugKotlin
+
+> Task :common:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/common/src/main/java/me/rerere/common/http/AcceptLang.kt:61:28 'field locale: Locale!' is deprecated. Deprecated in Java.
+w: file:///home/runner/work/rikkahub/rikkahub/common/src/main/java/me/rerere/common/http/JsonExpression.kt:359:13 'when' is exhaustive so 'else' is redundant here.
+
+> Task :common:compileDebugJavaWithJavac NO-SOURCE
+> Task :common:bundleLibCompileToJarDebug
+> Task :document:compileDebugJavaWithJavac NO-SOURCE
+> Task :document:bundleLibCompileToJarDebug
+> Task :material3:javaPreCompileDebug
+> Task :mediagen:generateDebugResources
+> Task :mediagen:packageDebugResources
+> Task :mediagen:parseDebugLocalResources
+> Task :mediagen:generateDebugRFile
+> Task :highlight:compileDebugJavaWithJavac NO-SOURCE
+> Task :highlight:bundleLibCompileToJarDebug
+> Task :mediagen:javaPreCompileDebug
+> Task :oauth:generateDebugResources
+> Task :oauth:packageDebugResources
+> Task :oauth:parseDebugLocalResources
+> Task :oauth:generateDebugRFile
+> Task :oauth:compileDebugKotlin
+> Task :oauth:javaPreCompileDebug
+> Task :oauth:compileDebugJavaWithJavac NO-SOURCE
+
+> Task :material3:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/material3/material-color-utilities/kotlin/dynamiccolor/ColorSpec2025.kt:902:37 Unnecessary non-null assertion (!!) on a non-null receiver of type 'DynamicColor'.
+w: file:///home/runner/work/rikkahub/rikkahub/material3/material-color-utilities/kotlin/dynamiccolor/ColorSpec2025.kt:1105:36 Unnecessary non-null assertion (!!) on a non-null receiver of type 'DynamicColor'.
+w: file:///home/runner/work/rikkahub/rikkahub/material3/material-color-utilities/kotlin/dynamiccolor/ColorSpec2025.kt:1251:33 Unnecessary non-null assertion (!!) on a non-null receiver of type 'DynamicColor'.
+
+> Task :oauth:bundleLibCompileToJarDebug
+> Task :search:generateDebugResources
+> Task :search:packageDebugResources
+> Task :search:parseDebugLocalResources
+> Task :search:generateDebugRFile
+> Task :search:javaPreCompileDebug
+> Task :speech:generateDebugResources
+> Task :speech:packageDebugResources
+> Task :speech:parseDebugLocalResources
+> Task :speech:generateDebugRFile
+> Task :material3:compileDebugJavaWithJavac NO-SOURCE
+> Task :material3:bundleLibCompileToJarDebug
+> Task :speech:javaPreCompileDebug
+> Task :terminal:generateDebugResources
+> Task :terminal:packageDebugResources
+> Task :terminal:parseDebugLocalResources
+> Task :terminal:generateDebugRFile
+> Task :terminal:compileDebugKotlin NO-SOURCE
+> Task :terminal:javaPreCompileDebug
+> Task :mediagen:compileDebugKotlin
+> Task :mediagen:compileDebugJavaWithJavac NO-SOURCE
+> Task :mediagen:bundleLibCompileToJarDebug
+> Task :ui:generateDebugResources
+> Task :ui:packageDebugResources
+> Task :ui:parseDebugLocalResources
+> Task :ui:generateDebugRFile
+
+> Task :terminal:compileDebugJavaWithJavac
+Note: /home/runner/work/rikkahub/rikkahub/terminal/src/main/java/com/termux/terminal/TerminalSession.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :terminal:bundleLibCompileToJarDebug
+> Task :ui:javaPreCompileDebug
+> Task :web:generateDebugResources
+> Task :web:packageDebugResources
+> Task :web:parseDebugLocalResources
+> Task :web:generateDebugRFile
+> Task :web:compileDebugKotlin
+> Task :web:javaPreCompileDebug
+> Task :web:compileDebugJavaWithJavac NO-SOURCE
+> Task :web:bundleLibCompileToJarDebug
+> Task :workspace:generateDebugResources
+> Task :workspace:packageDebugResources
+> Task :workspace:parseDebugLocalResources
+> Task :workspace:generateDebugRFile
+
+> Task :speech:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/asr/providers/MiMoASRController.kt:256:41 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/ElevenLabsTTSProvider.kt:53:42 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/FishAudioTTSProvider.kt:61:42 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/GroqTTSProvider.kt:52:56 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/StepTTSProvider.kt:79:56 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/StepTTSProvider.kt:86:39 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/SystemTTSProvider.kt:79:34 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/SystemTTSProvider.kt:112:16 Unnecessary safe call on a non-null receiver of type 'TextToSpeech'.
+w: file:///home/runner/work/rikkahub/rikkahub/speech/src/main/java/me/rerere/tts/provider/providers/XAITTSProvider.kt:50:42 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+
+> Task :speech:compileDebugJavaWithJavac NO-SOURCE
+> Task :speech:bundleLibCompileToJarDebug
+> Task :workspace:javaPreCompileDebug
+> Task :ai:compileDebugKotlin
+> Task :app:javaPreCompileGithubDebug
+> Task :ai:generateDebugAssets UP-TO-DATE
+> Task :ai:mergeDebugAssets
+> Task :app:generateGithubDebugAssets UP-TO-DATE
+> Task :common:generateDebugAssets UP-TO-DATE
+> Task :common:mergeDebugAssets
+> Task :document:generateDebugAssets UP-TO-DATE
+> Task :document:mergeDebugAssets
+> Task :highlight:generateDebugAssets UP-TO-DATE
+> Task :highlight:mergeDebugAssets
+> Task :material3:generateDebugAssets UP-TO-DATE
+> Task :material3:mergeDebugAssets
+> Task :mediagen:generateDebugAssets UP-TO-DATE
+> Task :mediagen:mergeDebugAssets
+> Task :oauth:generateDebugAssets UP-TO-DATE
+> Task :oauth:mergeDebugAssets
+> Task :search:generateDebugAssets UP-TO-DATE
+> Task :search:mergeDebugAssets
+> Task :speech:generateDebugAssets UP-TO-DATE
+> Task :speech:mergeDebugAssets
+> Task :terminal:generateDebugAssets UP-TO-DATE
+> Task :terminal:mergeDebugAssets
+> Task :ui:generateDebugAssets UP-TO-DATE
+
+> Task :workspace:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/workspace/src/main/java/me/rerere/workspace/ssh/SshConnection.kt:251:25 'fun setPassword(p0: String!): Unit' is deprecated. Deprecated in Java.
+
+> Task :ui:mergeDebugAssets
+> Task :web:generateDebugAssets UP-TO-DATE
+> Task :web:mergeDebugAssets
+> Task :workspace:generateDebugAssets UP-TO-DATE
+> Task :workspace:mergeDebugAssets
+> Task :workspace:compileDebugJavaWithJavac NO-SOURCE
+> Task :workspace:bundleLibCompileToJarDebug
+> Task :app:mergeGithubDebugAssets
+> Task :app:compressGithubDebugAssets
+
+> Task :ai:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/claude/ClaudeProvider.kt:256:78 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/claude/ClaudeProvider.kt:259:40 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/claude/ClaudeProvider.kt:312:86 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/claude/ClaudeProvider.kt:315:36 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/google/GoogleProvider.kt:150:41 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/google/GoogleProvider.kt:212:86 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/google/GoogleProvider.kt:215:36 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/ChatCompletionsAPI.kt:106:86 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/ChatCompletionsAPI.kt:109:36 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:73:78 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:76:40 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:163:82 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:166:36 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:225:82 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:296:78 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/provider/providers/openai/OpenAIProvider.kt:350:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/Message.kt:294:30 'data class ToolCall : UIMessagePart' is deprecated. Use UIMessagePart.Tool instead.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/Message.kt:295:30 'data class ToolResult : UIMessagePart' is deprecated. Use UIMessagePart.Tool instead.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/Message.kt:296:30 'data object Search : UIMessagePart' is deprecated. Deprecated.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/UIMessagePart.kt:140:26 'data class ToolCall : UIMessagePart' is deprecated. Use UIMessagePart.Tool instead.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/UIMessagePart.kt:140:37 'data class ToolCall : UIMessagePart' is deprecated. Use UIMessagePart.Tool instead.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/ui/UIMessagePart.kt:141:20 'constructor(toolCallId: String, toolName: String, arguments: String, approvalState: ToolApprovalState = ..., metadata: JsonObject? = ...): UIMessagePart.ToolCall' is deprecated. Use UIMessagePart.Tool instead.
+w: file:///home/runner/work/rikkahub/rikkahub/ai/src/main/java/me/rerere/ai/util/ErrorParser.kt:46:9 'when' is exhaustive so 'else' is redundant here.
+
+> Task :ai:compileDebugJavaWithJavac NO-SOURCE
+> Task :ai:bundleLibCompileToJarDebug
+> Task :app:generateGithubDebugGlobalSynthetics
+> Task :app:desugarGithubDebugFileDependencies
+> Task :ai:processDebugJavaRes
+> Task :common:processDebugJavaRes
+> Task :document:processDebugJavaRes
+> Task :highlight:processDebugJavaRes
+> Task :material3:processDebugJavaRes
+> Task :mediagen:processDebugJavaRes
+> Task :oauth:processDebugJavaRes
+> Task :speech:processDebugJavaRes
+> Task :terminal:processDebugJavaRes NO-SOURCE
+> Task :web:processDebugJavaRes
+> Task :workspace:processDebugJavaRes
+
+> Task :ui:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/ui/src/main/java/me/rerere/ui/components/Tooltip.kt:18:44 'fun rememberTooltipPositionProvider(spacingBetweenTooltipAndAnchor: Dp = ...): PopupPositionProvider' is deprecated. Deprecated in favor of rememberTooltipPositionProvider API that takes a preferred positioning. Please use rememberTooltipPositionProvider with TooltipAnchorPosition.Above if this same behavior is desired.
+
+> Task :app:checkGithubDebugDuplicateClasses
+> Task :ui:compileDebugJavaWithJavac NO-SOURCE
+> Task :ai:bundleLibRuntimeToDirDebug
+> Task :ui:bundleLibCompileToJarDebug
+> Task :ui:processDebugJavaRes
+> Task :web:bundleLibRuntimeToDirDebug
+> Task :document:bundleLibRuntimeToDirDebug
+> Task :highlight:bundleLibRuntimeToDirDebug
+
+> Task :search:compileDebugKotlin
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/GrokSearchService.kt:136:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/LinkUpService.kt:107:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/LinkUpService.kt:151:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/MetasoSearchService.kt:76:44 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/MetasoSearchService.kt:97:46 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/PerplexitySearchService.kt:117:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/RikkaHubSearchService.kt:85:74 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/SearXNGService.kt:114:46 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/ZhipuSearchService.kt:75:44 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+w: file:///home/runner/work/rikkahub/rikkahub/search/src/main/java/me/rerere/search/ZhipuSearchService.kt:95:38 Unnecessary safe call on a non-null receiver of type 'ResponseBody'.
+
+> Task :search:compileDebugJavaWithJavac NO-SOURCE
+> Task :search:bundleLibCompileToJarDebug
+> Task :search:processDebugJavaRes
+> Task :search:bundleLibRuntimeToDirDebug
+> Task :speech:bundleLibRuntimeToDirDebug
+> Task :mediagen:bundleLibRuntimeToDirDebug
+> Task :common:bundleLibRuntimeToDirDebug
+> Task :material3:bundleLibRuntimeToDirDebug
+> Task :ui:bundleLibRuntimeToDirDebug
+> Task :workspace:bundleLibRuntimeToDirDebug
+> Task :terminal:bundleLibRuntimeToDirDebug
+> Task :oauth:bundleLibRuntimeToDirDebug
+> Task :ai:mapDebugSourceSetPaths
+> Task :ai:compileDebugLibraryResources
+> Task :ai:writeDebugAarMetadata
+> Task :common:writeDebugAarMetadata
+> Task :document:writeDebugAarMetadata
+> Task :highlight:writeDebugAarMetadata
+> Task :material3:writeDebugAarMetadata
+> Task :mediagen:writeDebugAarMetadata
+> Task :oauth:writeDebugAarMetadata
+> Task :search:writeDebugAarMetadata
+> Task :speech:writeDebugAarMetadata
+> Task :terminal:writeDebugAarMetadata
+> Task :ui:writeDebugAarMetadata
+> Task :web:writeDebugAarMetadata
+> Task :workspace:writeDebugAarMetadata
+> Task :app:checkGithubDebugAarMetadata
+> Task :app:compileGithubDebugNavigationResources
+> Task :app:mergeLibDexGithubDebug
+> Task :app:createGithubDebugCompatibleScreenManifests
+> Task :ai:extractDeepLinksDebug
+> Task :ai:processDebugManifest
+> Task :app:extractDeepLinksGithubDebug
+> Task :common:extractDeepLinksDebug
+> Task :common:processDebugManifest
+> Task :document:extractDeepLinksDebug
+> Task :document:processDebugManifest
+> Task :highlight:extractDeepLinksDebug
+> Task :highlight:processDebugManifest
+> Task :material3:extractDeepLinksDebug
+> Task :material3:processDebugManifest
+> Task :mediagen:extractDeepLinksDebug
+> Task :mediagen:processDebugManifest
+> Task :oauth:extractDeepLinksDebug
+> Task :oauth:processDebugManifest
+> Task :search:extractDeepLinksDebug
+> Task :search:processDebugManifest
+> Task :speech:extractDeepLinksDebug
+> Task :speech:processDebugManifest
+> Task :terminal:extractDeepLinksDebug
+> Task :terminal:processDebugManifest
+> Task :ui:extractDeepLinksDebug
+> Task :ui:processDebugManifest
+> Task :web:extractDeepLinksDebug
+> Task :web:processDebugManifest
+> Task :workspace:extractDeepLinksDebug
+> Task :workspace:processDebugManifest
+> Task :app:processGithubDebugMainManifest
+> Task :app:processGithubDebugManifest
+> Task :app:processGithubDebugManifestForPackage
+> Task :common:mapDebugSourceSetPaths
+> Task :common:compileDebugLibraryResources
+> Task :document:mapDebugSourceSetPaths
+> Task :document:compileDebugLibraryResources
+> Task :highlight:mapDebugSourceSetPaths
+> Task :highlight:compileDebugLibraryResources
+> Task :material3:mapDebugSourceSetPaths
+> Task :material3:compileDebugLibraryResources
+> Task :mediagen:mapDebugSourceSetPaths
+> Task :mediagen:compileDebugLibraryResources
+> Task :oauth:mapDebugSourceSetPaths
+> Task :oauth:compileDebugLibraryResources
+> Task :search:mapDebugSourceSetPaths
+> Task :search:compileDebugLibraryResources
+> Task :speech:mapDebugSourceSetPaths
+> Task :speech:compileDebugLibraryResources
+> Task :terminal:mapDebugSourceSetPaths
+> Task :terminal:compileDebugLibraryResources
+> Task :ui:mapDebugSourceSetPaths
+> Task :ui:compileDebugLibraryResources
+> Task :web:mapDebugSourceSetPaths
+> Task :web:compileDebugLibraryResources
+> Task :workspace:mapDebugSourceSetPaths
+> Task :workspace:compileDebugLibraryResources
+> Task :ai:mergeDebugJniLibFolders
+> Task :ai:mergeDebugNativeLibs NO-SOURCE
+> Task :ai:copyDebugJniLibsProjectOnly
+> Task :app:mergeGithubDebugJniLibFolders
+> Task :common:mergeDebugJniLibFolders
+> Task :common:mergeDebugNativeLibs NO-SOURCE
+> Task :common:copyDebugJniLibsProjectOnly
+> Task :document:mergeDebugJniLibFolders
+> Task :document:mergeDebugNativeLibs NO-SOURCE
+> Task :document:copyDebugJniLibsProjectOnly
+> Task :highlight:mergeDebugJniLibFolders
+> Task :highlight:mergeDebugNativeLibs NO-SOURCE
+> Task :highlight:copyDebugJniLibsProjectOnly
+> Task :material3:mergeDebugJniLibFolders
+> Task :material3:mergeDebugNativeLibs NO-SOURCE
+> Task :material3:copyDebugJniLibsProjectOnly
+> Task :mediagen:mergeDebugJniLibFolders
+> Task :mediagen:mergeDebugNativeLibs NO-SOURCE
+> Task :mediagen:copyDebugJniLibsProjectOnly
+> Task :oauth:mergeDebugJniLibFolders
+> Task :oauth:mergeDebugNativeLibs NO-SOURCE
+> Task :oauth:copyDebugJniLibsProjectOnly
+> Task :search:mergeDebugJniLibFolders
+> Task :search:mergeDebugNativeLibs NO-SOURCE
+> Task :search:copyDebugJniLibsProjectOnly
+> Task :speech:mergeDebugJniLibFolders
+> Task :speech:mergeDebugNativeLibs NO-SOURCE
+> Task :app:mergeExtDexGithubDebug
+> Task :speech:copyDebugJniLibsProjectOnly
+
+> Task :terminal:configureCMakeDebug[arm64-v8a]
+Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
+License for package CMake 3.22.1 accepted.
+Preparing "Install CMake 3.22.1 v.3.22.1".
+
+> Task :app:mergeGithubDebugResources
+
+> Task :terminal:configureCMakeDebug[arm64-v8a]
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+
+> Task :terminal:buildCMakeDebug[arm64-v8a]
+> Task :terminal:configureCMakeDebug[armeabi-v7a]
+> Task :app:kspGithubDebugKotlin
+> Task :terminal:buildCMakeDebug[armeabi-v7a]
+> Task :terminal:configureCMakeDebug[x86]
+> Task :terminal:buildCMakeDebug[x86]
+> Task :terminal:configureCMakeDebug[x86_64]
+> Task :terminal:buildCMakeDebug[x86_64]
+> Task :terminal:mergeDebugJniLibFolders
+> Task :terminal:mergeDebugNativeLibs
+> Task :terminal:copyDebugJniLibsProjectOnly
+> Task :ui:mergeDebugJniLibFolders
+> Task :ui:mergeDebugNativeLibs NO-SOURCE
+> Task :ui:copyDebugJniLibsProjectOnly
+> Task :web:mergeDebugJniLibFolders
+> Task :web:mergeDebugNativeLibs NO-SOURCE
+> Task :web:copyDebugJniLibsProjectOnly
+> Task :workspace:configureCMakeDebug[arm64-v8a]
+> Task :workspace:buildCMakeDebug[arm64-v8a]
+> Task :workspace:configureCMakeDebug[armeabi-v7a]
+> Task :workspace:buildCMakeDebug[armeabi-v7a]
+> Task :app:processGithubDebugResources
+> Task :workspace:configureCMakeDebug[x86]
+> Task :workspace:configureCMakeDebug[x86_64]
+> Task :workspace:buildCMakeDebug[x86]
+> Task :workspace:buildCMakeDebug[x86_64]
+> Task :workspace:mergeDebugJniLibFolders
+> Task :workspace:mergeDebugNativeLibs
+> Task :workspace:copyDebugJniLibsProjectOnly
+> Task :app:mergeGithubDebugNativeLibs
+> Task :app:stripGithubDebugDebugSymbols
+> Task :app:writeGithubDebugAppMetadata
+> Task :app:writeGithubDebugSigningConfigVersions
+> Task :app:validateSigningGithubDebug
+> Task :app:compileGithubDebugKotlin
+e: file:///home/runner/work/rikkahub/rikkahub/app/src/main/java/me/rerere/rikkahub/data/sync/auto/AutoSyncNotifier.kt:17:17 Unresolved reference 'createNotificationChannelCompat' on receiver of type 'NotificationManagerCompat'.
+
+> Task :app:compileGithubDebugKotlin FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/rikkahub/rikkahub/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileGithubDebugKotlin' (registered by plugin 'com.android.internal.application').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: UNRESOLVED_REFERENCE
+       Kotlin compiler error
+         Unresolved reference 'createNotificationChannelCompat' on receiver of type 'NotificationManagerCompat'.
+         Location: /home/runner/work/rikkahub/rikkahub/app/src/main/java/me/rerere/rikkahub/data/sync/auto/AutoSyncNotifier.kt line 17
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6m 47s
+306 actionable tasks: 306 executed
+Configuration cache entry stored.
