@@ -14,7 +14,7 @@ object AutoSyncNotifier {
 
     fun notifyApplied(context: Context, archiveName: String) {
         val manager = NotificationManagerCompat.from(context)
-        manager.createNotificationChannelCompat(
+        manager.createNotificationChannel(
             NotificationChannelCompat
                 .Builder(CHANNEL_ID, NotificationManagerCompat.IMPORTANCE_DEFAULT)
                 .setName("自动同步")
