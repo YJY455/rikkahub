@@ -5,6 +5,9 @@ on:
   push:
     branches: [sync]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,9 +49,23 @@ jobs:
 
       # debug 版包名带 .debug 后缀，可以和官方版共存，也不需要自己的签名
       - name: Build debug APK
-        run: ./gradlew :app:assembleGithubDebug --no-daemon
+        run: |
+          set -o pipefail
+          ./gradlew :app:assembleGithubDebug --no-daemon 2>&1 | tee gradle.log
+
+      # 失败时把日志推到 ci-logs 分支，方便排查（不触发新的构建）
+      - name: Keep failure log
+        if: failure()
+        run: |
+          tail -n 600 gradle.log > build-error.log || true
+          git config user.name "rikka-ci"
+          git config user.email "ci@local"
+          git add -f build-error.log
+          git commit -m "ci: build error log"
+          git push -f origin HEAD:ci-logs
 
       - uses: actions/upload-artifact@v4
+        if: success()
         with:
           name: rikkahub-fork-debug
           path: app/build/outputs/apk/github/debug/*.apk
