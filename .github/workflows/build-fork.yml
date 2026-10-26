@@ -1,0 +1,46 @@
+name: Build fork APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [sync]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'jetbrains'
+          java-version: '21'
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web-ui/pnpm-lock.yaml
+
+      - name: Install web-ui dependencies
+        working-directory: web-ui
+        run: pnpm install --frozen-lockfile
+
+      - name: Write google-services.json
+        run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > app/google-services.json
+
+      # debug 版包名带 .debug 后缀，可以和官方版共存，也不需要自己的签名
+      - name: Build debug APK
+        run: ./gradlew :app:assembleGithubDebug --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rikkahub-fork-debug
+          path: app/build/outputs/apk/github/debug/*.apk
